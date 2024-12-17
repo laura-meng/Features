@@ -24,7 +24,7 @@ fun NavigationRailWithNavHost() {
     // Track selected item index in the navigation rail
     var selectedItem by remember { mutableStateOf(0) }
 
-    // Define your items, icons, and selected/unselected states
+    // Define items, icons, and selected/unselected states
     val items = listOf("Text Input", "Alerts", "Pay", "Webview", "Map", "API")
     val selectedIcons = listOf(
         Icons.Filled.Edit,

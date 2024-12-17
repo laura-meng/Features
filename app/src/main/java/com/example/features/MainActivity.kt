@@ -22,9 +22,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun FeatureApp() {
+fun FeatureApp(modifier: Modifier = Modifier) {
     FeaturesTheme {
-        Surface(modifier = Modifier.fillMaxHeight(), color = MaterialTheme.colorScheme.background) {
+        Surface(modifier = modifier.fillMaxHeight(), color = MaterialTheme.colorScheme.background) {
             NavigationRailWithNavHost()
         }
     }
