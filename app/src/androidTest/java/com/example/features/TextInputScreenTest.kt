@@ -29,12 +29,11 @@ class TextInputScreenTest {
         val textField = composeTestRule.onNodeWithTag("textInputField")
         textField.performTextInput("Hello friends!")
 
-        textField.assert(hasText("Hello friends!"))
+        textField.assert(hasText("Hello friends!")) // Verify typed text is displayed
 
         val submitButton = composeTestRule.onNodeWithText("Submit")
         submitButton.performClick()
 
-        // 4. Verify the submitted text appears and the text field is cleared
         composeTestRule.onNodeWithText("Hello friends!").assertIsDisplayed()
         textField.assert(hasText("")) // Verify TextField is cleared after submit
     }
