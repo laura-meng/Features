@@ -11,6 +11,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.features.ui.components.NavigationRailWithNavHost
 import com.example.features.ui.theme.FeaturesTheme
+import com.google.accompanist.permissions.ExperimentalPermissionsApi
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +23,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalPermissionsApi::class)
 @Composable
 fun FeatureApp(modifier: Modifier = Modifier) {
     FeaturesTheme {
@@ -29,6 +32,7 @@ fun FeatureApp(modifier: Modifier = Modifier) {
         }
     }
 }
+
 
 @Preview(showBackground = true, apiLevel = 33)
 @Composable
