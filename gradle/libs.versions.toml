@@ -1,4 +1,5 @@
 [versions]
+accompanistPermissions = "0.28.0"
 agp = "8.3.2"
 kotlin = "1.9.0"
 coreKtx = "1.15.0"
@@ -9,11 +10,18 @@ lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.0"
 composeBom = "2023.08.00"
 composeMaterial = "1.4.0"
+lifecycleRuntimeKtxVersion = "2.8.7"
+mapsCompose = "2.9.0"
 navigation = "2.8.5"
+playServicesLocation = "21.3.0"
+playServicesMaps = "19.0.0"
 uiTestJunit4Android = "1.7.6"
+uiTestManifest = "1.7.6"
 
 [libraries]
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanistPermissions" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx-v250 = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtxVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -30,6 +38,10 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 androidx-compose-material = { group = "androidx.wear.compose", name = "compose-material", version.ref = "composeMaterial" }
 androidx-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
 androidx-ui-test-junit4-android = { group = "androidx.compose.ui", name = "ui-test-junit4-android", version.ref = "uiTestJunit4Android" }
+maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "mapsCompose" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
+ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "uiTestManifest" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
