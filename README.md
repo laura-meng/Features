@@ -17,3 +17,8 @@ Map - Google Maps screen with no personalization. Future state: add current loca
 
 
 <img width="293" alt="Screenshot 2024-12-20 at 12 15 32 PM" src="https://github.com/user-attachments/assets/8c90bc63-0cfb-4a2e-80f5-c3314064d428" />
+
+Webview:
+
+
+<img width="276" alt="Screenshot 2024-12-20 at 3 54 24 PM" src="https://github.com/user-attachments/assets/d7ac3967-b333-46db-aa8b-4221639deae9" />

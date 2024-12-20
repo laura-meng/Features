@@ -70,6 +70,9 @@ dependencies {
     implementation(libs.accompanist.permissions)  // For permission handling
     implementation(libs.accompanist.permissions)
 
+    // webview wrapper
+    implementation(libs.compose.webview)
+
     testImplementation(libs.junit)
     testImplementation(libs.androidx.ui.test.junit4.android)
     androidTestImplementation(libs.androidx.junit)

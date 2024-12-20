@@ -1,9 +1,14 @@
 package com.example.features.ui.screens
 
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import com.kevinnzou.web.WebView
+import com.kevinnzou.web.rememberWebViewState
 
 @Composable
 fun WebviewScreen() {
-    Text(text = "Webview will go here")
+    val state = rememberWebViewState("https://saucelabs.com")
+
+    WebView(
+        state = state
+    )
 }
